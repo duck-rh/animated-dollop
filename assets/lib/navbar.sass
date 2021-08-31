@@ -8,8 +8,8 @@ $nav-padding-x: $nav-padding-y * $nav-padding-ratio !default
 
 // Color defaults
 $nav-color: transparent !default
-$nav-text-color: white
-$nav-menu-color: $grey-color-light !default
+$nav-text-color: black
+$nav-menu-color: black !default
 $nav-menu-top-color: $nav-menu-color !default
 $nav-menu-top-text-color: $nav-text-color !default
 $nav-highlight-color: $brand-color !default
@@ -21,13 +21,11 @@ $nav-icon-menu: "≡" !default
 $nav-icon-right: "⯈" !default
 $nav-icon-down: "▾" !default
 
-// Styling defaults (shadow and rounded radius)
-$nav-menu-shadow: 2px 2px 2px rgba(black, 0.125) !default
-$nav-menu-radius: 3px !default
+
 
 // Animation timing defaults
 $nav-animation: 150ms !default
-$nav-menu-animation: $nav-animation * 2 !default
+$nav-menu-animation: $nav-animation * 1!default
 $nav-mobile-menu-animation: all 300ms ease-in-out
 
 // These should be set in theme.scss/theme.sass or minima already...
@@ -87,22 +85,7 @@ $nav-mobile-font-family: -apple-system-font, "Roboto", "Droid Sans", $base-font-
         top: 100%
         visibility: hidden
         opacity: 0
-        box-shadow: $nav-menu-shadow
-
-        li
-          &:last-child
-            border-radius: 0 0 $nav-menu-radius $nav-menu-radius
-
-          &.nav-group:hover
-            border-radius: 0 0 0 $nav-menu-radius
-
-          ul li:first-child
-            border-radius: 0 $nav-menu-radius 0 0
-
-        ul
-          left: 100%
-          top: 0
-
+       
     li
       float: left
       position: relative
@@ -239,7 +222,7 @@ $nav-mobile-font-family: -apple-system-font, "Roboto", "Droid Sans", $base-font-
     left: 0
     padding: 0.5ex
     line-height: $nav-mobile-button-size
-    border-radius: $nav-menu-radius
+
 
   .nav-check:checked + nav >
     .nav-menu
@@ -267,7 +250,7 @@ $nav-mobile-font-family: -apple-system-font, "Roboto", "Droid Sans", $base-font-
 // It's also possible to extend nav.menu for other nav elements
 // ...or make nav elements with a class of menu in document bodies too
 .masthead nav
-  @extend nav, .menu
+  @extend nav,.menu
 
 @media screen and (max-width: $nav-min-width)
   .masthead .hgroup

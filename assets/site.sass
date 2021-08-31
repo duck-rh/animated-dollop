@@ -14,9 +14,6 @@ $text-color: #def
 $background-color: #777
 $brand-color: #b3d1ff
 
-$grey-color: #112
-$grey-color-light: lighten($grey-color, 6%)
-$grey-color-dark: darken($grey-color, 6%)
 
 // Width of the content area
 $content-width: 1170px
@@ -36,6 +33,7 @@ $nav-menu-top-text-color: #fff
 
 // Navbar (check out lib/navbar.sass for customizable options)
 @import lib/navbar.sass
+@import lib/banner.sass
 
 
 
@@ -50,33 +48,33 @@ $nav-menu-top-text-color: #fff
 // }
 
 html
-  background-color: black
+  background-color: white
   background-image: url("../images/background.png")
   background-size: tile
   background-attachment: fixed
 
 body
-  background: radial-gradient(ellipse at center top, rgba(0,0,0,0) 100%, rgba(0,0,0,0.3) 100%)
-
+    background-color: #FFCEC3
+    color: black
 .masthead
   box-sizing: border-box
   background: rgba(black, 0.4) // this is also the background of navbar, navbar itself is transparent..
   float: left
   width: 100%
   line-height: 45px
-  padding-left: calc((100vw - #{$content-width}) / 2)
 
-  .hgroup
-    float: left
+ 
 
   h1
     margin: 0
-
+    text-align: center
   .logo
     margin: 10px 24px 0 20px
 
   .nav-wrap
-    float: center
+    background-color: #C3F3FF
+    display: flex
+    justify-content: center
 
     > nav > ul > li >
       a, span
@@ -95,8 +93,9 @@ body
 .post-meta
   color: #def
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, p
   font-family: $base-font-family
+  text-align: center
 
 .intro
   font-weight: 200
@@ -113,6 +112,7 @@ h1, h2, h3, h4, h5, h6
     font-size: 67.5px
     line-height: 1
     padding-top: 2rem
+    text-align: center
 
   .btn
     margin: 1ex 0 0
