@@ -52,6 +52,8 @@ $nav-mobile-font-family: -apple-system-font, "Roboto", "Droid Sans", $base-font-
     position: relative
     z-index: 100
     cursor: default
+  
+
 
     // Cleafix hack to make nav act more like block
     // without having to set an overflow property
@@ -65,8 +67,7 @@ $nav-mobile-font-family: -apple-system-font, "Roboto", "Droid Sans", $base-font-
     ul, li
       transition: all $nav-animation
       list-style: none
-      margin: 0
-      padding: 0
+
 
     a, span
       transition: all $nav-menu-animation
@@ -77,7 +78,7 @@ $nav-mobile-font-family: -apple-system-font, "Roboto", "Droid Sans", $base-font-
 
     ul
       background: $nav-color
-      float: left
+    
 
       ul
         position: absolute
@@ -111,10 +112,7 @@ $nav-mobile-font-family: -apple-system-font, "Roboto", "Droid Sans", $base-font-
           z-index: 1
           transform: scale(1)
 
-          a, span
-            margin: 0 #{$nav-padding-x * -1}
-            padding: $nav-padding-y #{$nav-padding-x * 2}
-
+          
           li:last-child a, span
             margin-bottom: #{$nav-padding-y * -4}
             padding-bottom: #{$nav-padding-y * 5}
