@@ -1,22 +1,12 @@
 
-<header class="masthead hidden-print" id="branding" role="banner">
-    <section class="hgroup">
+
     
-      </section>
-    {% if site.data.navigation %}
+<div class="wrapper" id="page-wrap" role="main">
+ <img src="assets/Linux-Pinguino.svg" class="h-logo">
+  <div class="nav-wrap">
+    {% include nav.html role="navigation" %}
 
-    <div class="nav-wrap">
-      {% assign logo_path = site.logo | default: "/images/logo.png" %}
-      {% assign has_logo = site.static_files | where: "path", logo_path %}
+  </div>
   
-      {% if has_logo[0] %}
-        <h1><a href="{{ "/" | prepend: site.baseurl }}"><img id="logo" class="logo" alt="{{ site.title }}" src="{{ logo_path | prepend: site.baseurl }}"></a></h1>
-      {% else %}
-      
-        <h1><a href="/">{{ site.title }}</a></h1>
-        {% endif %}
-      {% include nav.html role="navigation" %}
-    </div>
+</div>
 
-  {% endif %}
-</header>
