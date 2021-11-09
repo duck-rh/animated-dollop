@@ -8,6 +8,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Jekyll redirect for homepage
 gem 'jekyll-redirect-from'
+gem 'bootstrap', '~> 4.3.1'
 
 # Happy Jekylling!
 gem "jekyll", "~> 4.2.0"
