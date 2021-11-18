@@ -1,0 +1,18 @@
+---
+layout: default
+index: false
+---
+
+{% assign items_grouped = site.posts | group_by: 'author' %}
+  {% for group in items_grouped %}
+   <div class="author-sort">
+    <h1>{{group.name}}</h1>
+    <div class="author-container">
+    {% for item in group.items %}
+    <div class="author-item">
+       <a href="{{ item.url }}"> <p>{{item.title}}</p></a>
+    </div>
+    {% endfor %}
+</div>
+</div>
+  {% endfor %}

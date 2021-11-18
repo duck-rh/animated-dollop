@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to penguins!"
+title:  "Welcome to Jekyll!"
 date:   2021-08-10 11:44:17 -0400
 categories: test 
 author: dinesh
@@ -8,8 +8,16 @@ summary-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
 summary-2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 summary-3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 ---
-Yes to be named according to the following format:
 
+# something important 
+
+
+You’ll find this post in  `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+
+Jekyll requires blog post files to be named according to the following format:
+
+
+# something important 
 `YEAR-MONTH-DAY-title.MARKUP`
 
 Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
