@@ -102,64 +102,6 @@ a {
     }
   }
 }
-.wrapper {
-    line-height: 72px;
-    position: fixed;
-    overflow: hidden;
-    top: 0;
-    width: 100%;
-    z-index: 99999;
-    nav {
-        background: $nav-color;
-        ul.nav-menu {
-            margin: 0;
-            text-align: right;
-            margin-right: 5em;
-
-            @include medium{
-              text-align: center;
-              padding-top: 50px;
-              font-size: 11px;
-            }
-
-            @include small{
-              text-align: center;
-              padding-top: 50px;
-              font-size: 11px;
-            }
-            li {
-              text-transform: uppercase;
-                display: inline;
-                list-decoration: none;
-                font-size: 110%;
-                font-weight: 600;
-                margin: 0 1em 0 0.1em;
-                
-                
-	        }
-    	   
-        }
-
-       
-    }  
-}
-
-.h-logo{
-  position: absolute;
-  padding-top: 10px;
-  left: 109px;
-  width: 150px;
-
-  @include medium {
-    display: flex;
-    justify-content: center;
-  }
-
-  @include small{
-    display: flex;
-    justify-content: center;
-  }
-}
 
 .page-header {
   position: fixed;
@@ -204,22 +146,7 @@ a {
  width: 50em;
  
 }
-.social-media{
-  display: flex;
-  margin-top: 22.3rem;
-  position: absolute;
-  right: 3em;
-}
 
-.github{
-  margin-top: 0.25em;
-  height: 4.5em;
-  width: 4em;   
-}
-.twitter{
-  height: 5em;
-  width: 5em;
-}
 
 .project-name {
   margin-top: 0;
