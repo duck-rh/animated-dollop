@@ -16,3 +16,54 @@ footer {
     margin-top: 20px ;
     height: 30px;  
 } 
+
+.footer-banner{
+    height: 10rem;
+    position: relative;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.footer-list{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0px;
+    a{
+        color: darkmagenta;
+        margin-right: 20px;
+    }
+    
+}
+
+.footer-end{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+    a{
+        color: green;
+    }
+}
+.footer-social{
+ position: relative;
+ margin-bottom: 10px;
+}
+
+.fb{
+
+    height: 40px;
+    width: 40px;
+}
+.tt{
+    height: 45px;
+    width: 45px;
+}
+.gh{
+    height: 40px;
+    width: 40px;
+}
+.email{
+    height: 40px;
+    width: 40px;
+}
