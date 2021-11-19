@@ -4,6 +4,10 @@ title:  "Welcome to penguins!"
 date:   2021-08-10 11:44:17 -0400
 categories: test 
 author: dinesh
+tags:
+  - somthing
+  - hello
+  
 summary-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 summary-2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 summary-3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
