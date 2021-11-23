@@ -184,7 +184,12 @@ a {
     font-size: 1rem;
   }
 }
-
+.main-content-default{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
 .main-content {
   word-wrap: break-word;
   
@@ -212,6 +217,8 @@ a {
     padding: 2rem 1rem;
     font-size: 1rem;
   }
+
+
   
   kbd {
     background-color: #fafbfc;
@@ -241,6 +248,7 @@ a {
     margin-bottom: 1rem;
     font-weight: normal;
     color: $section-headings-color;
+    text-align: left;
   }
 
   p {
@@ -254,9 +262,11 @@ a {
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
+    text-align: left;
   }
 
   pre {
+    text-align: left;
     padding: 0.8rem;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -276,6 +286,7 @@ a {
       white-space: pre;
       background: transparent;
       border: 0;
+      text-align: left;
     }
   }
 
