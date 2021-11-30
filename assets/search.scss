@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import 'variables';
+
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+.search-body{
+    @include large{
+        margin-left: 20rem;
+    }
+    
+}
+.search-link{
+    color: $doc-a-color;
+}
+.search-card{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    h2{
+        margin-bottom: 0.2rem;
+    }
+}
+.search-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.search-box{
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin-bottom: 1rem;
+    }
+.query, .submit{
+    font-size: inherit;
+    padding: 0.2em;
+    margin: 0.1em 0.2em;
+    /* the following ensures they're all using the same box-model for rendering */
+    -moz-box-sizing: content-box; /* or `border-box` */
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+
+}
+.query{
+    width: 70%;
+}
+.submit{
+    width: 50px;
+    
+}
+
+.document-search{
+    h1{
+        display: none;
+    }
+}

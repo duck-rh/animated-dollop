@@ -42,6 +42,12 @@ sass:
   add_charset: true
   style: :compressed
 
+  
+# for document search
+collections:
+  document_search:
+    output: true
+
 
 # YAML defaults for pages
 defaults:
