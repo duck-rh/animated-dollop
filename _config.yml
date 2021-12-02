@@ -88,3 +88,10 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# --- meeting schedule settings ---
+
+# They appear exactly as typed. Follow the format already here when updating.
+meeting-day: Thursday
+meeting-place: Jitsi (see Calendar)
+meeting-time: 5:00PM - 6:00PM
