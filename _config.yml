@@ -47,6 +47,12 @@ sass:
 collections:
   document_search:
     output: true
+  events:
+    output: true
+    permalink: /events/:path/
+    title: Events
+
+
 
 
 # YAML defaults for pages

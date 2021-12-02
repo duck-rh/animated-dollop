@@ -28,6 +28,7 @@
     color: $doc-a-color;
 }
 .search-card{
+   
     margin-top: 1rem;
     margin-bottom: 1rem;
     h2{
@@ -64,6 +65,7 @@
 }
 
 .document-search{
+  display: block;
     h1{
         display: none;
     }
