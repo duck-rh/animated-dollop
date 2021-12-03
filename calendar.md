@@ -9,10 +9,10 @@ title: Calendar
             <span id="menu-navi">
                 <button type="button" class="btn btn-default btn-sm move-today" data-action="move-today">Today</button>
                 <button type="button" class="btn btn-default btn-sm move-day" data-action="move-prev">
-                <i class="fas fa-chevron-left" data-action="move-prev"></i>
+                < Previous Month
                 </button>
-                <button type="button" class="btn btn-default btn-sm move-day" data-action="move-next">
-                <i class="fas fa-chevron-right" data-action="move-next"></i>
+                <button type="button" class="btn btn-default btn-sm move-day next-day" data-action="move-next">
+               Next Month >
                 </button>
             </span>
             <span id="renderRange" class="render-range"></span>

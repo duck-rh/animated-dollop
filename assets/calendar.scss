@@ -19,7 +19,8 @@
   }
 }
 
-.calendar{
+.card-title{
+  font-size: 50px;
 }
 .fc-view .fc-month-view .fc-basic-view{
    table{
@@ -29,4 +30,23 @@
 }
 .fc-head{
     width: 900px;
+}
+.move-today{
+  
+  color: $calendar-today-color;
+}
+.fas, .move-day:hover{
+    color: $header-bg-color;
+  }
+.move-today:hover{
+  color: $header-bg-color;
+}
+.fas{
+  color: $calender-prev-color;
+}
+.move-day{
+  color:$calender-prev-color;
+}
+.next-day{
+  margin-right: 20px;
 }
