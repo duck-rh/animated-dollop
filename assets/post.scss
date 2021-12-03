@@ -35,18 +35,27 @@
 .post{
     width: 26rem;
     position: relative;
+    padding: 20px;
+}
+.post-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.post-detail{
+    display: flex;
+    justify-content: space-between;
+    
 }
 .author{
-    position: absolute;
-    top: 2.2rem;
     a{
         color: blue;
     }
 }
-.tags{
-    a{
-        color: crimson;
-    }
+.date{
+    color: cadetblue;
+    font-weight: lighter;
+    font-size: 14px;
 }
 .categories{
     a{
@@ -54,7 +63,7 @@
     }
 }
 .post-desc{
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .author-sort{
@@ -70,4 +79,13 @@
     display: flex;
     flex-wrap: wrap;
     
+}
+.category-container{
+    margin-left: 10rem;
+}
+.category-title{
+    color: $blog-title-color;
+}
+.category-list{
+    color: $blog-a-color;
 }

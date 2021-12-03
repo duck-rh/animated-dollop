@@ -4,11 +4,11 @@ layout: default
 <div class="search-body">
 
 
-<h1>hello</h1>
 
 {% include search.html %}
 <div class="search-container">
 {% for post in site.posts %}
+{% unless post.categories contains 'meetings-meetups' %}
 <article class="search-card">
    <div><h2>
       <a class="search-link"href="{{ post.url }}">
@@ -18,8 +18,9 @@ layout: default
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
    <br> {{ post.summary-1 }}
 </div> </article>
+{% endunless %}
 {% endfor %}
-</div>
+
 {% for document in site.document_search %}
 <article class="document-search">
 <div><h2>
@@ -30,5 +31,5 @@ layout: default
   {{ document.content | truncatewords: 60 }}
 </div> </article>
 {% endfor %}
-
+</div>
 </div>

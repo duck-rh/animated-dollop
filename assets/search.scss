@@ -20,7 +20,7 @@
 }
 .search-body{
     @include large{
-        margin-left: 20rem;
+        margin-left: 10rem;
     }
     
 }
@@ -28,7 +28,7 @@
     color: $doc-a-color;
 }
 .search-card{
-   
+ 
     margin-top: 1rem;
     margin-bottom: 1rem;
     h2{
@@ -36,17 +36,17 @@
     }
 }
 .search-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  padding: 2rem;
+   
 }
 .search-box{
     font-size: 1em;
     padding: 0.5em;
     border-radius: 1em;
     margin-bottom: 1rem;
+    position: relative;
     }
-.query, .submit{
+.query{
     font-size: inherit;
     padding: 0.2em;
     margin: 0.1em 0.2em;
@@ -60,7 +60,14 @@
     width: 70%;
 }
 .submit{
-    width: 50px;
+  position: absolute;
+  height: 33px;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  
+  
     
 }
 
@@ -69,4 +76,8 @@
     h1{
         display: none;
     }
+}
+
+.page-content{
+  flex: 1;
 }

@@ -31,7 +31,10 @@
   text-align: left;
 
   line-height: 3rem;
-  margin-left: 10rem;
+  @include large{
+    margin-left: 10rem;
+  }
+ 
 }
 .doc-link{
     color: $doc-a-color;
