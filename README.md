@@ -162,4 +162,4 @@ To add event,
   hidden: true
   ---
   ```
-- Add `rrule: "FREQ=MONTHLY;UNTIL=20220423T190000"`  freq can be `WEEKLY` or `MONTHLY` and until should determine the end of the event in `YYYYMMDDT1HHMMSS`
+- Add `rrule: "FREQ=MONTHLY;UNTIL=20220423T190000"`  FREQ can be `WEEKLY` or `MONTHLY` and UNTIL should determine the end of the event in `YYYYMMDDT1HHMMSS`
