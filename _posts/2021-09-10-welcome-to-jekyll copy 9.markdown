@@ -3,7 +3,7 @@ layout: post
 title:  "Welcome to penguins! Title article 1"
 date:   2021-08-10 11:44:17 -0400
 categories: test 
-author: Misc
+author: Duck
 tags:
   - somthing
   - hello

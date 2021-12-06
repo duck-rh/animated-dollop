@@ -4,7 +4,8 @@ index: false
 ---
 
 {% assign items_grouped = site.posts | group_by: 'author' %}
-  {% for group in items_grouped %}
+<div class="author-card">
+{% for group in items_grouped %}
    <div class="author-sort">
     <h1>{{group.name}}</h1>
     
@@ -20,3 +21,4 @@ index: false
 </div>
 </div>
   {% endfor %}
+</div>   

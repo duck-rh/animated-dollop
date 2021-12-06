@@ -23,11 +23,11 @@ $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
 
 //nav
-$nav-color: black !default;
-$footer-color: black !default;
+$nav-color: rgb(89, 142, 255) !default;
+$footer-color:  rgb(89, 142, 255) !default;
 
 //banner
-$banner-color: cyan !default;
+$banner-color: rgb(149, 240, 164) !default;
 
 //documentation
 $doc-a-color: rgb(70, 190, 230) !default;
@@ -41,3 +41,6 @@ $blog-title-color: rgb(19, 146, 97) !default;
 $calendar-today-color:#606c71 ;
 $calender-prev-color:#606c71 ;
 $calendar-next-color:#606c71 ;
+
+//active state color
+$active-color:black;

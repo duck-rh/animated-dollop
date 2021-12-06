@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Dispatched entreaties boisterous say why stimulated"
 date:   2021-08-10 11:44:17 -0400
 categories: gorilla 
-author: dinesh
+author: Misc
 summary-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 summary-2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 summary-3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 

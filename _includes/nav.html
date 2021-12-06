@@ -57,7 +57,7 @@
     {% endif %}
   {% endcapture %}{% assign vars = nil %}
 
-  <li class="nav--{{ nav.title | slugify | default: "home" }}{{ nav_class }}{{ navgroup }}{{ active }}" role="menuitem">
+  <li  {% if page.url contains {{nav.url}} %} class="active" {%endif%} role="menuitem">
     {% if nav.url %}
       <a href="{{ nav.url | prepend: baseurl }}">{{
         nav_icon | strip
