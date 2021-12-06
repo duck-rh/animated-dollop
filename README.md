@@ -46,4 +46,7 @@ This template is based on jekyll, a static website generator. This template can 
    ```
    bundle exec jekyll server
    ```
-### More documentation will be added before DEC 02 2021   
+### Styling
+
+Styling is simple, this template uses SCSS and the files can be found in `/assets`
+All the colors for Navbar, footer etc are defined in `/assets/variables.scss` - here the colors can be customized accordignly 
