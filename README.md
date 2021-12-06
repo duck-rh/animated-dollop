@@ -68,7 +68,7 @@ title:  "Welcome to Jekyll!"
 date:   2021-08-10 11:44:17 -0400
 categories: test 
 author: dinesh
-summary-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+summary-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 
 ---
 ```
@@ -126,3 +126,40 @@ An example for responsive css element can be found below
   }
 }
 ```
+## Calendar 
+
+Calendar can be found in the events tab in the website, code and logic can be found in `calendar.md` file. 
+Calendar used in the template is from Toast UI Calendar plugin - [More resources on TUI Calendar] (https://ui.toast.com/tui-calendar)
+
+### Add event 
+
+To add event, 
+- Go to `/meetings-meetups/_posts`
+- Create a .md file with this naming convention `YYYY-MM-DD-your-title.md`
+- In the .md file, add the following frontmatter with edited values
+   ```
+   ---
+   layout: redirect
+   redirect: Meeting link
+   date-start: "2021-12-09 17:00"
+   date-end: "2021-12-12 19:00"
+   location: "Location"
+   title: "Fest"
+   hidden: true
+   ---
+   ```
+- All the detials can be edited except **hidden: true**, which prevents the .md file from appearing in blog posts  
+- To add a recurring event
+  ```
+  ---
+  layout: redirect
+  redirect: https://enterlink
+  date-start: "2021-12-16 17:00"
+  date-end: "2021-12-16 19:00"
+  location: "Enter location"
+  title: "Event1"
+  rrule: "FREQ=MONTHLY;UNTIL=20220423T190000"
+  hidden: true
+  ---
+  ```
+- Add `rrule: "FREQ=MONTHLY;UNTIL=20220423T190000"`  freq can be `WEEKLY` or `MONTHLY` and until should determine the end of the event in `YYYYMMDDT1HHMMSS`
