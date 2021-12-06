@@ -46,4 +46,55 @@ This template is based on jekyll, a static website generator. This template can 
    ```
    bundle exec jekyll server
    ```
-### More documentation will be added before DEC 02 2021   
+   
+## Styling
+
+Styling is simple, this template uses SCSS and the files can be found in `/assets`
+All the colors for Navbar, footer etc are defined in `/assets/variables.scss` - here the colors can be customized accordignly 
+
+## Responsive Layout
+
+This template is responsive on default setting,to change the behavior of website based on the screen size - in `/assets/` all the individual .scss files will have 
+```
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+```
+The above css elements will define the behavior of each screen size. Large will define breakpoint for PCs, Medium for Tablet, and Small for Mobile devices.
+An example for responsive css element can be found below 
+```
+.page-header {
+  position: fixed;
+  width: 100%;
+  color: $header-heading-color;
+  text-align: center;
+  background-color: $header-bg-color;
+  //background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+
+  @include large {
+    padding: 5rem 6rem;
+  }
+
+  @include medium {
+    padding: 3rem 4rem;
+  }
+
+  @include small {
+    padding: 2rem 1rem;
+  }
+}
+```
