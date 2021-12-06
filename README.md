@@ -46,6 +46,34 @@ This template is based on jekyll, a static website generator. This template can 
    ```
    bundle exec jekyll server
    ```
+## Work with the Site
+
+As this site scaffolding is built on Jekyll, most all Jekyll documentation applies.
+
+Useful references:
+- [the official Jekyll documentation](http://jekyllrb.com/docs/home/)
+- [CloudCannon Jekyll tutorials](https://learn.cloudcannon.com/)
+
+### Posts
+
+All the released notes and documentation are in the form of markdown files and can be found in `_posts` and `/documentation/files`
+
+### Frontmatter
+
+Each blog post will have a fronmatter which defines the properties of the post like title, author, date, etc., without which Jekyll will not process the blog posts.
+```
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2021-08-10 11:44:17 -0400
+categories: test 
+author: dinesh
+summary-1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+
+---
+```
+More post frontmatter variables can be found in Jekyll official documentation - [the official Jekyll documentation](http://jekyllrb.com/docs/home/)
+   
    
 ## Styling
 
