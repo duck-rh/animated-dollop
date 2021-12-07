@@ -32,6 +32,7 @@
     width: 900px;
 }
 .move-today{
+  font-size: 24px;
   
   color: $calendar-today-color;
 }
@@ -42,9 +43,11 @@
   color: $header-bg-color;
 }
 .fas{
+  font-size: 24px;
   color: $calender-prev-color;
 }
 .move-day{
+  font-size: 24px;
   color:$calender-prev-color;
 }
 .next-day{
