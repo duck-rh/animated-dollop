@@ -3,12 +3,13 @@ layout: default
 index: false
 ---
 
+<h1 class="blog-title">Blog Authors</h1>
 {% assign items_grouped = site.posts | group_by: 'author' %}
 <div class="author-card">
 {% for group in items_grouped %}
    <div class="author-sort">
     <h1>{{group.name}}</h1>
-    
+
     <div class="author-container">
     {% for item in group.items %}
     {% unless item.categories contains 'meetings-meetups' %}
@@ -17,8 +18,8 @@ index: false
     </div>
     {% endunless %}
     {% endfor %}
-    
+
 </div>
 </div>
   {% endfor %}
-</div>   
+</div>
