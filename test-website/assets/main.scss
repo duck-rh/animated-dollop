@@ -1,0 +1,17 @@
+---
+---
+
+// does not work
+$header-heading-color: red;
+// works
+$footer-color: red;
+
+@import "animated-dollop";
+
+// not supported by sassc
+// https://github.com/jekyll/jekyll-sass-converter/issues/116
+// and Jekyll 4 does not seem to support the new implementation
+// @use "animated-dollop" with {
+//     $header-bg-color: #ff0000;
+// };
+
